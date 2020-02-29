@@ -11,6 +11,9 @@ class User:
             u'Coalitions': u'' + self.coalitions,
             u'Bio': u'' + self.bio
         }
+        print("Username: " + self.username
+              "\nPassword: " + self.password
+              "\nBio: " + self.bio)
 
     def update(self, key, newValue):
         for i in self.dict.keys():
@@ -20,24 +23,35 @@ class User:
     
     def add_coalition(self, coalition):
         self.coalitions.append(coalition)
+        for i in self.coalitions:
+            print(i.name)
+            
     
     def add_story(self, story):
         self.stories.append(story)
-        
+        for i in self.stories:
+            print(i.title)
         
 class Coalition:
-    def __init__(self, user_main, description):
+    def __init__(self, name, user_main, description):
+        self.name = name
         self.admin_user = user_main
         self.subscribers = [User]
         self.count = len(self.subscribers)
         self.description = description
-
+        print("Name: " + self.name
+              "\nAdmin User: " + self.admin_user.username
+              "\nCount: " + self.count
+              "\nDescription: " + description)
+        
     def add_user(self, user):
         self.subscribers.append(user)
         self.count += 1
-        print(self.subscribers + " and the user count is " + self.count)
+        for i in self.subscribers:
+            print(i.name)
 
 class Story:
     def __init__(self, title, body):
         self.title = title
         self.body = body
+        print("Title: " + self.title + "\nBody: " + self.body) 
