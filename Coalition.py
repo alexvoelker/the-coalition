@@ -2,9 +2,9 @@ class User:
     def __init__(self, username, password, bio):
         self.username = username
         self.password = password
-        self.Coalition = []
+        self.coalitions = []
         self.bio = bio
-        self.Story = []
+        self.stories = []
         self.dict = {
             u'Username': u'' + self.username,
             u'Password': u'' + self.password,
@@ -18,11 +18,11 @@ class User:
                 self.dict[i] = newValue
         print(self.dict)
     
-    def add_coalition(self, Coalition):
-        self.Coalition.append(Coalition)
+    def add_coalition(self, coalition):
+        self.coalitions.append(coalition)
     
-    def add_story(self, Story):
-        self.Story.append(Story)
+    def add_story(self, story):
+        self.stories.append(story)
         
         
 class Coalition:
