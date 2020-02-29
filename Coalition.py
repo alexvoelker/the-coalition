@@ -2,9 +2,9 @@ class User:
     def __init__(self, username, password, bio):
         self.username = username
         self.password = password
-        self.Coalition = None
+        self.Coalition = []
         self.bio = bio
-        self.Story = None
+        self.Story = []
         self.dict = {
             u'Username': u'' + self.username,
             u'Password': u'' + self.password,
@@ -19,10 +19,10 @@ class User:
         print(self.dict)
     
     def add_coalition(self, Coalition):
-        self.Coalition = [Coalition]
+        self.Coalition.append(Coalition)
     
     def add_story(self, Story):
-        self.Story = [Story]
+        self.Story.append(Story)
         
         
 class Coalition:
