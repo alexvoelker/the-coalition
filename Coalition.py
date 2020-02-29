@@ -45,7 +45,7 @@ class Coalition:
         self.count = len(self.subscribers)
         self.description = description
         print("Name: " + self.name
-              "\nAdmin User: " + self.admin_user.username
+              "\nAdminUser: " + self.admin_user.username
               "\nCount: " + self.count
               "\nDescription: " + description)
         
