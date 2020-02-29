@@ -28,7 +28,7 @@ class User:
 class Coalition:
     def __init__(self, user_main, description):
         self.admin_user = user_main
-        self.subscribers = [user_main]
+        self.subscribers = [User]
         self.count = len(self.subscribers)
         self.description = description
 
