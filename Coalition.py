@@ -3,12 +3,12 @@ class User:
         self.username = username
         self.password = password
         self.coalitions = []
+        self.coalitions_made = []
         self.bio = bio
         self.stories = []
         self.dict = {
             u'Username': u'' + self.username,
             u'Password': u'' + self.password,
-            u'Coalitions': u'' + self.coalitions,
             u'Bio': u'' + self.bio
         }
         print("Username: " + self.username
@@ -31,6 +31,11 @@ class User:
         self.stories.append(story)
         for i in self.stories:
             print(i.title)
+            
+    def make_coalition(self, cTitle, cDescription):
+        self.coalitions_made.append(Coalition(cTitle, self, cDescription))
+        for i in self.coalitions_made:
+            print(i.name)
         
 class Coalition:
     def __init__(self, name, user_main, description):
