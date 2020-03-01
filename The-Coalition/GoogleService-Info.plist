@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>784004793334-3cuse009ehhb5ld7oop9vq7b904ek4js.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.784004793334-3cuse009ehhb5ld7oop9vq7b904ek4js</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAiuBhVfTh-lIdzvPSc5Dh3ys3ry4H9Pyw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>784004793334</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.coalition</string>
+	<key>PROJECT_ID</key>
+	<string>the-coalition</string>
+	<key>STORAGE_BUCKET</key>
+	<string>the-coalition.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:784004793334:ios:3d3740b36cc31652b67dd7</string>
+	<key>DATABASE_URL</key>
+	<string>https://the-coalition.firebaseio.com</string>
+</dict>
+</plist>
